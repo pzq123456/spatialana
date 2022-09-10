@@ -1,0 +1,19 @@
+{
+  "name": "spatialana",
+  "version": "1.0.0",
+  "description": "This is a package developed for our Spatial Analysis cource.In this package I will realize some classical algorithms in the reagion of computing geometry,cv...For the purpose of learing,it will have rich annoations and be easy to use. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzq123456/spatialana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pzq123456/spatialana/issues"
+  },
+  "homepage": "https://github.com/pzq123456/spatialana#readme"
+}
