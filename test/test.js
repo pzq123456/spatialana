@@ -1,4 +1,4 @@
-import { kernel_5 }  from '../lib/kernel.js';
+import { kernel_5 ,kernel_arr_10}  from '../lib/kernel.js';
 import { Point,PointSet,Line,SimpleLine }  from '../lib/base.js';
 
 /**
@@ -27,6 +27,18 @@ import { Point,PointSet,Line,SimpleLine }  from '../lib/base.js';
     return reslist;
  }
 
+
+ /**
+ * 测试函数 ：生成单个简单线 
+ * @param {number} a - 随机范围的上限
+ * @return {SimpleLine} - 返回的单个简单线 
+ */
+  function test_3(a){
+    let x= test_1(a) ;
+    let y= test_1(a);
+    let sl =new SimpleLine(x,y);
+    return sl;
+ }
 
  /**
  * parse function of getClockwiseFea
@@ -58,6 +70,44 @@ export {
     test_2
 }
 
+for(let i=0;i<100;i++){
+   //
+   
+
+}
+
+/*
+// test SimpleLine.getAngle2Line_()
+console.log ("---test time : "+(i+1)+"----");
+   let sl = test_3(200);
+   let sl2 = test_3(200);
+   console.log ( sl.getAngle2Line_(sl2));
+   console.log ( sl.getAngle2Line_(sl2));
+   console.log ("reverse 1:");
+   sl.Reverse();
+   console.log ( sl.getAngle2Line_(sl2));
+   console.log ( sl.getAngle2Line_(sl2));
+   console.log ("--end--"); */
+
+
+/* 
+//test kernel_arr_10
+ let po1 = test_1(100);
+    let po2 = test_1(100);
+    let po3 = test_1(300);
+    let res =kernel_arr_10(po1.getXY(),po2.getXY(),po1.getXY(),po3.getXY());
+    console.log(res);
+    let po1 = test_1(100);
+    let po2 = test_1(100);
+    let po3 = test_1(300);
+    let res =kernel_arr_10(po1.getXY(),po2.getXY(),po1.getXY(),po3.getXY());
+    console.log(res);
+*/
+
+
+
+
+
 //line class test part
 //let pol=test_2(50,100);
 //let ps = new PointSet(pol);
@@ -73,10 +123,23 @@ console.log(line.getEndPoint());
 */
 
 
-/* class point test part
-  
-//point1=new Point(1,1);
-//point2=new Point(8,9);
+
+
+
+/* class line test part
+let point1=new Point(0,0);
+let point2=new Point(1,1);
+let line = new SimpleLine(point1,point2);
+console.log(line.getSimpleLine());
+console.log(line.getStartPoint());
+console.log(line.getEndPoint());
+line.Reverse();
+console.log(line.getSimpleLine());
+console.log(line.getStartPoint());
+console.log(line.getEndPoint());
+*/
+
+/*
 //console.log(point1.getMinkowskiDistance_(point2,1));
 //console.log(point1.getChebyshevDistance_(point2));
 //console.log (point2.getX());
